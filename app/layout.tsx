@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { Toaster } from "@/components/ui/toaster"
+import Script from "next/script"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -32,6 +33,15 @@ export const metadata: Metadata = {
     email: false,
     address: false,
     telephone: false,
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.png", sizes: "any" },
+      { url: "/favicon.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: [{ url: "/favicon.png", sizes: "180x180", type: "image/png" }],
+    shortcut: "/favicon.png",
   },
   alternates: {
     canonical: "https://brightmindsfutureleaders.com",
@@ -175,6 +185,15 @@ export default function RootLayout({
       <body className={inter.className}>
         {children}
         <Toaster />
+
+        {/* Chat Widget - Loads asynchronously on all pages */}
+        <Script
+          src="https://widgets.leadconnectorhq.com/loader.js"
+          data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+          data-widget-id="6683b61ddd58563eacbbf34b"
+          strategy="lazyOnload"
+          id="chat-widget"
+        />
       </body>
     </html>
   )

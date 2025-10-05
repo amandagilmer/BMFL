@@ -9,7 +9,6 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [aboutDropdownOpen, setAboutDropdownOpen] = useState(false)
-  const [whoWeServeDropdownOpen, setWhoWeServeDropdownOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -53,25 +52,27 @@ export default function Header() {
 
                 {/* About Dropdown */}
                 <div
-                  className="relative group"
+                  className="relative"
                   onMouseEnter={() => setAboutDropdownOpen(true)}
                   onMouseLeave={() => setAboutDropdownOpen(false)}
                 >
                   <button className="flex items-center gap-1 text-gray-700 hover:text-purple-600 transition-colors font-medium text-base whitespace-nowrap">
                     <span>About</span>
-                    <ChevronDown className="h-4 w-4 transition-transform group-hover:rotate-180" />
+                    <ChevronDown className={`h-4 w-4 transition-transform ${aboutDropdownOpen ? "rotate-180" : ""}`} />
                   </button>
                   {aboutDropdownOpen && (
-                    <div className="absolute top-full left-0 mt-4 w-56 bg-white rounded-xl shadow-xl border border-gray-100 py-2 z-50">
+                    <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-gray-100 py-2 z-50">
                       <Link
                         href="/about"
                         className="block px-5 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600 transition-colors font-medium"
+                        onClick={() => setAboutDropdownOpen(false)}
                       >
                         Our Story
                       </Link>
                       <Link
                         href="/who-we-serve"
                         className="block px-5 py-3 text-gray-700 hover:bg-purple-50 hover:text-purple-600 transition-colors font-medium"
+                        onClick={() => setAboutDropdownOpen(false)}
                       >
                         Who We Serve
                       </Link>
@@ -91,6 +92,13 @@ export default function Header() {
                   className="text-gray-700 hover:text-purple-600 transition-colors font-medium text-base whitespace-nowrap relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-purple-600 after:transition-all hover:after:w-full"
                 >
                   Success Stories
+                </Link>
+
+                <Link
+                  href="/faq"
+                  className="text-gray-700 hover:text-purple-600 transition-colors font-medium text-base whitespace-nowrap relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-purple-600 after:transition-all hover:after:w-full"
+                >
+                  FAQ
                 </Link>
 
                 <Link
@@ -191,6 +199,14 @@ export default function Header() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Success Stories
+              </Link>
+
+              <Link
+                href="/faq"
+                className="px-4 py-3 text-gray-700 hover:text-purple-600 hover:bg-purple-50 rounded-lg transition-colors font-medium"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                FAQ
               </Link>
 
               <Link
