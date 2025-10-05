@@ -1,13 +1,36 @@
 "use client"
 
+import { useEffect } from "react"
+
 export function ContactFormEmbed() {
+  useEffect(() => {
+    // Load the form embed script
+    const script = document.createElement("script")
+    script.src = "https://sites.brightmindsfutureleaders.com/js/form_embed.js"
+    script.async = true
+    document.body.appendChild(script)
+
+    return () => {
+      // Cleanup script on unmount
+      if (script.parentNode) {
+        script.parentNode.removeChild(script)
+      }
+    }
+  }, [])
+
   return (
     <div className="w-full h-full min-h-[800px]">
       <iframe
         src="https://sites.brightmindsfutureleaders.com/widget/form/uKJPQPNxVzsvHoa4OsRJ"
-        className="w-full h-full border-none"
+        style={{
+          width: "100%",
+          height: "100%",
+          minHeight: "800px",
+          border: "none",
+          borderRadius: "20px",
+        }}
         id="inline-uKJPQPNxVzsvHoa4OsRJ"
-        data-layout="{'id':'INLINE'}"
+        data-layout='{"id":"INLINE"}'
         data-trigger-type="alwaysShow"
         data-trigger-value=""
         data-activation-type="alwaysActivated"
@@ -20,7 +43,6 @@ export function ContactFormEmbed() {
         data-form-id="uKJPQPNxVzsvHoa4OsRJ"
         title="Drop us a message"
       />
-      <script src="https://sites.brightmindsfutureleaders.com/js/form_embed.js" async />
     </div>
   )
 }

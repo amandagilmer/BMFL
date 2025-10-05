@@ -86,6 +86,9 @@ export const metadata: Metadata = {
   verification: {
     google: "your-google-verification-code",
   },
+  other: {
+    "facebook-domain-verification": "e10x1q0ko30szez9aqpz844izlymqi",
+  },
     generator: 'v0.app'
 }
 
@@ -97,6 +100,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="facebook-domain-verification" content="e10x1q0ko30szez9aqpz844izlymqi" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
