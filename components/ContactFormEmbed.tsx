@@ -11,9 +11,9 @@ export function ContactFormEmbed() {
     document.body.appendChild(script)
 
     return () => {
-      // Cleanup script on unmount
-      if (script.parentNode) {
-        script.parentNode.removeChild(script)
+      // Cleanup: remove script when component unmounts
+      if (document.body.contains(script)) {
+        document.body.removeChild(script)
       }
     }
   }, [])
@@ -30,7 +30,7 @@ export function ContactFormEmbed() {
           borderRadius: "20px",
         }}
         id="inline-uKJPQPNxVzsvHoa4OsRJ"
-        data-layout='{"id":"INLINE"}'
+        data-layout="{'id':'INLINE'}"
         data-trigger-type="alwaysShow"
         data-trigger-value=""
         data-activation-type="alwaysActivated"

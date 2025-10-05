@@ -4,6 +4,7 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import { Toaster } from "@/components/ui/toaster"
 import Script from "next/script"
+import { FacebookPixel } from "@/components/FacebookPixel"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -187,6 +188,9 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
+        {/* Facebook Pixel Tracking */}
+        <FacebookPixel />
+
         {children}
         <Toaster />
 
