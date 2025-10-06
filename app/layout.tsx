@@ -2,32 +2,20 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
-import { Toaster } from "@/components/ui/toaster"
 import Script from "next/script"
-import { FacebookPixel } from "@/components/FacebookPixel"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://brightmindsfutureleaders.com"),
   title: {
-    default: "Private School in New Caney, TX | Bright Minds Future Leaders",
+    default: "Bright Minds Future Leaders | Private Micro School in New Caney, TX",
     template: "%s | Bright Minds Future Leaders",
   },
   description:
-    "Private micro school in New Caney, TX. Small class sizes, personalized learning, character development for K-8. Serving Porter, Humble, Kingwood.",
-  keywords: [
-    "private school New Caney",
-    "micro school Texas",
-    "small class sizes",
-    "personalized learning",
-    "K-8 education",
-    "character development",
-    "Porter TX school",
-    "Humble TX school",
-    "Kingwood school",
-  ],
-  authors: [{ name: "Angela Gilmer", url: "https://brightmindsfutureleaders.com/about" }],
+    "Award-winning private micro school in New Caney, TX. Personalized K-8 education with small class sizes (max 12 students). Enroll today!",
+  keywords:
+    "private school New Caney TX, micro school, small class sizes, K-8 education, personalized learning, character development",
+  authors: [{ name: "Bright Minds Future Leaders" }],
   creator: "Bright Minds Future Leaders",
   publisher: "Bright Minds Future Leaders",
   formatDetection: {
@@ -35,43 +23,33 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  icons: {
-    icon: [
-      { url: "/favicon.png", sizes: "any" },
-      { url: "/favicon.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicon.png", sizes: "16x16", type: "image/png" },
-    ],
-    apple: [{ url: "/favicon.png", sizes: "180x180", type: "image/png" }],
-    shortcut: "/favicon.png",
-  },
+  metadataBase: new URL("https://www.brightmindsfutureleaders.com"),
   alternates: {
-    canonical: "https://brightmindsfutureleaders.com",
+    canonical: "/",
   },
   openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "https://brightmindsfutureleaders.com",
-    siteName: "Bright Minds Future Leaders",
-    title: "Private School in New Caney, TX | Bright Minds Future Leaders",
+    title: "Bright Minds Future Leaders | Private Micro School in New Caney, TX",
     description:
-      "Private micro school in New Caney, TX. Small class sizes, personalized learning, character development for K-8. Serving Porter, Humble, Kingwood.",
+      "Award-winning private micro school in New Caney, TX. Personalized K-8 education with small class sizes.",
+    url: "https://www.brightmindsfutureleaders.com",
+    siteName: "Bright Minds Future Leaders",
+    locale: "en_US",
+    type: "website",
     images: [
       {
-        url: "https://brightmindsfutureleaders.com/hero-students-bg.png",
+        url: "/hero-students-bg.png",
         width: 1200,
         height: 630,
-        alt: "Bright Minds Future Leaders - Private School in New Caney, TX",
+        alt: "Bright Minds Future Leaders",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Private School in New Caney, TX | Bright Minds Future Leaders",
+    title: "Bright Minds Future Leaders | Private Micro School in New Caney, TX",
     description:
-      "Private micro school in New Caney, TX. Small class sizes, personalized learning, character development for K-8. Serving Porter, Humble, Kingwood.",
-    images: ["https://brightmindsfutureleaders.com/hero-students-bg.png"],
-    creator: "@brightmindstx",
-    site: "@brightmindstx",
+      "Award-winning private micro school in New Caney, TX. Personalized K-8 education with small class sizes.",
+    images: ["/hero-students-bg.png"],
   },
   robots: {
     index: true,
@@ -84,8 +62,15 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  icons: {
+    icon: [
+      { url: "/favicon.png", type: "image/png" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    apple: [{ url: "/favicon.png", type: "image/png" }],
+  },
   verification: {
-    google: "your-google-verification-code",
+    google: "verification_token",
   },
   other: {
     "facebook-domain-verification": "e10x1q0ko30szez9aqpz844izlymqi",
@@ -95,112 +80,53 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode
-}>) {
+}) {
   return (
     <html lang="en">
       <head>
         <meta name="facebook-domain-verification" content="e10x1q0ko30szez9aqpz844izlymqi" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "PrivateSchool",
-              name: "Bright Minds Future Leaders",
-              alternateName: "BMFL",
-              description:
-                "Private micro school in New Caney, TX offering personalized, ability-based learning for students K-8",
-              url: "https://brightmindsfutureleaders.com",
-              telephone: "+1-832-957-7530",
-              email: "info@brightmindsfutureleaders.com",
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "22893 Antique Ln",
-                addressLocality: "New Caney",
-                addressRegion: "TX",
-                postalCode: "77357",
-                addressCountry: "US",
-              },
-              geo: {
-                "@type": "GeoCoordinates",
-                latitude: "30.1588",
-                longitude: "-95.1849",
-              },
-              founder: {
-                "@type": "Person",
-                name: "Angela Gilmer",
-                jobTitle: "Founder & Lead Educator",
-              },
-              areaServed: [
-                {
-                  "@type": "City",
-                  name: "New Caney",
-                  containedInPlace: {
-                    "@type": "State",
-                    name: "Texas",
-                  },
-                },
-                {
-                  "@type": "City",
-                  name: "Porter",
-                },
-                {
-                  "@type": "City",
-                  name: "Humble",
-                },
-                {
-                  "@type": "City",
-                  name: "Kingwood",
-                },
-                {
-                  "@type": "City",
-                  name: "Atascocita",
-                },
-                {
-                  "@type": "City",
-                  name: "Spring",
-                },
-                {
-                  "@type": "City",
-                  name: "Conroe",
-                },
-                {
-                  "@type": "City",
-                  name: "The Woodlands",
-                },
-              ],
-              sameAs: [
-                "https://www.facebook.com/brightmindsfutureleaders",
-                "https://www.instagram.com/brightmindsfutureleaders",
-              ],
-              priceRange: "$$",
-              image: "https://brightmindsfutureleaders.com/logo-bright-minds.png",
-              logo: {
-                "@type": "ImageObject",
-                url: "https://brightmindsfutureleaders.com/logo-bright-minds.png",
-                width: 200,
-                height: 60,
-              },
-            }),
-          }}
-        />
       </head>
       <body className={inter.className}>
-        {/* Facebook Pixel Tracking */}
-        <FacebookPixel />
-
         {children}
-        <Toaster />
 
-        {/* Chat Widget - Loads asynchronously on all pages */}
+        {/* Facebook Pixel */}
         <Script
+          id="facebook-pixel"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              !function(f,b,e,v,n,t,s)
+              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+              n.queue=[];t=b.createElement(e);t.async=!0;
+              t.src=v;s=b.getElementsByTagName(e)[0];
+              s.parentNode.insertBefore(t,s)}(window, document,'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+              fbq('init', '414826808258340');
+              fbq('track', 'PageView');
+            `,
+          }}
+        />
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            src="https://www.facebook.com/tr?id=414826808258340&ev=PageView&noscript=1"
+            alt=""
+          />
+        </noscript>
+
+        {/* Chat Widget */}
+        <Script
+          id="chat-widget"
           src="https://widgets.leadconnectorhq.com/loader.js"
           data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
           data-widget-id="6683b61ddd58563eacbbf34b"
           strategy="lazyOnload"
-          id="chat-widget"
         />
       </body>
     </html>
