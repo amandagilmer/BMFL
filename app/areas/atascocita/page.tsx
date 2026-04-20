@@ -9,9 +9,9 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Private School Near Atascocita, TX | Bright Minds Future Leaders",
   description:
-    "Premier private micro school serving Atascocita, TX. Max 8 students, individualized K-8 education, certified teachers. Alternative to Humble ISD. Serving Kingwood, Humble areas. Book your tour today!",
+    "Premier private micro school serving Atascocita, TX. Max 8 students, individualized K-5 education, certified teachers. Alternative to Humble ISD. Serving Kingwood, Humble areas. Book your tour today!",
   keywords:
-    "private school Atascocita TX, Atascocita micro school, Humble ISD alternative, small class sizes Atascocita, personalized education Atascocita, K-8 private school",
+    "private school Atascocita TX, Atascocita micro school, Humble ISD alternative, small class sizes Atascocita, personalized education Atascocita, K-5 private school",
 }
 
 export default function AtascocitaPage() {

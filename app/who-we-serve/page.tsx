@@ -236,23 +236,6 @@ export default function WhoWeServePage() {
               </CardContent>
             </Card>
 
-            <Card className="bg-white border-2 border-purple-200 hover:border-purple-400 transition-colors">
-              <CardContent className="p-8 text-center">
-                <div className="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-3xl font-bold text-purple-600">6-8</span>
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Middle School</h3>
-                <p className="text-gray-600 mb-6">
-                  Preparing for high school with advanced academics, character development, and real-world applications.
-                </p>
-                <ul className="text-left space-y-2 text-gray-700">
-                  <li>• Pre-algebra and algebra</li>
-                  <li>• Advanced writing and literature</li>
-                  <li>• Science and social studies</li>
-                  <li>• Character and leadership focus</li>
-                </ul>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
@@ -329,8 +312,8 @@ export default function WhoWeServePage() {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">Easy Access</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Conveniently located with easy access from Highway 494 and other main access roads throughout the greater
-              Houston area.
+              Conveniently located with easy access from US 59 and Loop 494 between 99 and FM 1485, making us
+              accessible to families throughout the greater Houston area.
             </p>
           </div>
         </div>

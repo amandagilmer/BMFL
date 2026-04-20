@@ -8,13 +8,13 @@ import Link from "next/link"
 import Image from "next/image"
 
 export const metadata: Metadata = {
-  title: "About Our Private Micro School | Bright Minds Future Leaders",
+  title: "Meet Founder Angela Gilmer — 30+ Years in Education",
   description:
-    "Learn about our innovative private micro school in New Caney, TX. Meet founder Angela Gilmer and discover our personalized education philosophy.",
+    "Meet Angela Gilmer, founder of Bright Minds Future Leaders. Over 30 years of educational experience, M.Ed. from UH, ESL & GT certified, and a lifelong New Caney resident. Located at 22893 Antique Ln, New Caney, TX 77357.",
   openGraph: {
-    title: "About Our Private Micro School | Bright Minds Future Leaders",
+    title: "Meet Founder Angela Gilmer | Bright Minds Future Leaders",
     description:
-      "Learn about our innovative private micro school in New Caney, TX. Meet founder Angela Gilmer and discover our personalized education philosophy.",
+      "Angela Gilmer built BMFL on one belief: every child deserves to feel successful and valued. Learn about our story, mission, and educational philosophy.",
     url: "https://brightmindsfutureleaders.com/about",
     siteName: "Bright Minds Future Leaders",
     images: [
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Our Private Micro School | Bright Minds Future Leaders",
+    title: "Meet Founder Angela Gilmer | Bright Minds Future Leaders",
     description:
-      "Learn about our innovative private micro school in New Caney, TX. Meet founder Angela Gilmer and discover our personalized education philosophy.",
+      "Angela Gilmer built BMFL on one belief: every child deserves to feel successful and valued. Learn about our story, mission, and educational philosophy.",
     images: ["https://brightmindsfutureleaders.com/angela-gilmer-students.jpeg"],
   },
   alternates: {
@@ -51,7 +51,7 @@ export default function AboutPage() {
       name: "Bright Minds Future Leaders",
     },
     alumniOf: "Texas Teaching Certification Program",
-    knowsAbout: ["Elementary Education", "Montessori Methods", "Individualized Learning", "Early Childhood Education"],
+    knowsAbout: ["Elementary Education", "ESL Education", "Gifted and Talented Education", "Individualized Learning", "Early Childhood Education", "Science of Reading"],
     award: "Texas Certified Teacher",
   }
 
@@ -85,10 +85,10 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 py-9">
           <div className="max-w-4xl mx-auto text-center py-28 pt-20 pb-2.5">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Meet the Certified Teacher Behind Our Private Micro School
+              Meet the Educator Behind Bright Minds Future Leaders
             </h1>
             <p className="text-xl text-gray-700 mb-8">
-              Angela Gilmer brings over 20 years of teaching experience and a passion for personalized education to
+              Angela Gilmer brings over 30 years of teaching experience and a passion for personalized education to
               every child at Bright Minds Future Leaders.
             </p>
           </div>
@@ -151,8 +151,8 @@ export default function AboutPage() {
                   <Award className="h-12 w-12 text-[#4169E1] mb-4" />
                   <h3 className="text-xl font-semibold mb-3">Certified Educator</h3>
                   <p className="text-gray-600">
-                    Texas-certified teacher with specialized training in early childhood education, Montessori methods,
-                    and individualized learning approaches.
+                    M.Ed. in Elementary Education from the University of Houston. ESL and Gifted & Talented certified,
+                    with deep expertise in individualized learning and the Science of Reading.
                   </p>
                 </CardContent>
               </Card>
@@ -160,10 +160,10 @@ export default function AboutPage() {
               <Card>
                 <CardContent className="p-6">
                   <Users className="h-12 w-12 text-[#4169E1] mb-4" />
-                  <h3 className="text-xl font-semibold mb-3">20+ Years Teaching</h3>
+                  <h3 className="text-xl font-semibold mb-3">30+ Years Teaching</h3>
                   <p className="text-gray-600">
-                    Extensive experience teaching across all elementary grade levels in public schools, private schools,
-                    and one-on-one tutoring settings.
+                    Extensive experience teaching across multiple districts, concluding her public school career in
+                    New Caney ISD — the community she has called home her entire life.
                   </p>
                 </CardContent>
               </Card>

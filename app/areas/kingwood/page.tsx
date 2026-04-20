@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     "Kingwood families choose our private micro school for elite education at accessible prices. Maximum 12 students, personalized learning plans, 15 minutes away. Tour today!",
   keywords:
-    "private school Kingwood TX, Kingwood micro school, Humble ISD alternative Kingwood, small class sizes Kingwood, personalized education Kingwood, K-8 private school Texas, gifted education Kingwood",
+    "private school Kingwood TX, Kingwood micro school, Humble ISD alternative Kingwood, small class sizes Kingwood, personalized education Kingwood, K-5 private school Texas, gifted education Kingwood",
   openGraph: {
     title: "Private School Serving Kingwood, TX | Bright Minds Future Leaders",
     description:

@@ -16,7 +16,7 @@ export default function HomePage() {
     name: "Bright Minds Future Leaders",
     alternateName: "BMFL",
     description:
-      "Private micro school in New Caney Texas offering personalized K-8 education with maximum 12 students per class",
+      "Private micro school in New Caney Texas offering personalized K-5 education with maximum 12 students per class",
     url: "https://brightmindsfutureleaders.com",
     telephone: "+18329577530",
     email: "info@brightmindsfutureleaders.com",
@@ -76,7 +76,7 @@ export default function HomePage() {
           "@type": "Offer",
           itemOffered: {
             "@type": "EducationalOccupationalProgram",
-            name: "K-8 Private Education",
+            name: "K-5 Private Education",
             description: "Personalized education for students kindergarten through 8th grade",
             provider: {
               "@type": "PrivateSchool",
@@ -94,7 +94,7 @@ export default function HomePage() {
     "@type": "LocalBusiness",
     name: "Bright Minds Future Leaders",
     description:
-      "Private micro school in New Caney Texas offering personalized K-8 education with maximum 12 students per class",
+      "Private micro school in New Caney Texas offering personalized K-5 education with maximum 12 students per class",
     url: "https://brightmindsfutureleaders.com",
     telephone: "+18329577530",
     email: "info@brightmindsfutureleaders.com",
@@ -130,7 +130,7 @@ export default function HomePage() {
     "@type": "WebPage",
     name: "Private School in New Caney, TX | Bright Minds Future Leaders",
     description:
-      "Private micro school in New Caney, TX. Small class sizes, personalized learning, character development for K-8. Serving Porter, Humble, Kingwood.",
+      "Private micro school in New Caney, TX. Small class sizes, personalized learning, character development for K-5. Serving Porter, Humble, Kingwood.",
     url: "https://brightmindsfutureleaders.com",
     inLanguage: "en-US",
     isPartOf: {

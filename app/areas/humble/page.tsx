@@ -10,9 +10,9 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Private School Near Humble, TX | Bright Minds Future Leaders",
   description:
-    "Serving Humble families seeking alternatives to large HISD classes. Private micro school with maximum 12 students per class. Personalized K-8 education. Tour today!",
+    "Serving Humble families seeking alternatives to large HISD classes. Private micro school with maximum 12 students per class. Personalized K-5 education. Tour today!",
   keywords:
-    "private school Humble TX, Humble ISD alternative, HISD alternative, micro school Humble, small class sizes Humble, personalized education Humble, K-8 private school Humble Texas, Atascocita private school, Kingwood private school",
+    "private school Humble TX, Humble ISD alternative, HISD alternative, micro school Humble, small class sizes Humble, personalized education Humble, K-5 private school Humble Texas, Atascocita private school, Kingwood private school",
   openGraph: {
     title: "Private School Near Humble, TX | Bright Minds Future Leaders",
     description:
@@ -27,7 +27,7 @@ const jsonLd = {
   "@type": "LocalBusiness",
   name: "Bright Minds Future Leaders",
   description:
-    "Award-winning private micro school serving Humble, TX families with personalized K-8 education and maximum 12 students per class.",
+    "Award-winning private micro school serving Humble, TX families with personalized K-5 education and maximum 12 students per class.",
   url: "https://brightmindsfutureleaders.com",
   telephone: "+1-832-957-7530",
   address: {
@@ -70,7 +70,7 @@ export default function HumblePage() {
                 </h1>
               </div>
               <p className="text-xl lg:text-2xl text-gray-700 mb-8 max-w-4xl mx-auto font-semibold">
-                Award-Winning Private Micro School Near Humble | Personalized K-8 Education
+                Award-Winning Private Micro School Near Humble | Personalized K-5 Education
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button

@@ -8,7 +8,7 @@ import { generatePageMetadata } from "@/lib/metadata-utils"
 export const metadata: Metadata = generatePageMetadata({
   title: "Our Educational Approach | Bright Minds Future Leaders",
   description:
-    "Discover our unique educational approach: ability-based learning, small class sizes (max 12 students), hands-on activities, and character development. Private micro school in New Caney, TX serving K-8 students.",
+    "Discover our unique educational approach: ability-based learning, small class sizes, hands-on activities, and character development. Private school in New Caney, TX serving K-5 students.",
   path: "/approach",
   image: "/learning-by-doing-puzzle.png",
 })
@@ -374,7 +374,7 @@ export default function ApproachPage() {
               <a href="/faq" className="underline hover:text-white">
                 Visit our FAQ page
               </a>{" "}
-              or call us at (281) 651-5258
+              or call us at (832) 957-7530
             </p>
           </div>
         </section>

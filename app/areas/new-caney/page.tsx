@@ -9,13 +9,13 @@ import { MapPin, Phone, Mail, Clock, Award, Users, BookOpen, Heart } from "lucid
 export const metadata: Metadata = {
   title: "Private School in New Caney, TX | Bright Minds Future Leaders",
   description:
-    "Top-rated private micro school in New Caney, TX. Personalized K-8 education with small class sizes (max 12 students). Award-winning character development program. Enroll today!",
+    "Top-rated private micro school in New Caney, TX. Personalized K-5 education with small class sizes (max 12 students). Award-winning character development program. Enroll today!",
   keywords:
-    "private school New Caney TX, micro school New Caney, small class sizes, K-8 education New Caney, personalized learning, character development",
+    "private school New Caney TX, micro school New Caney, small class sizes, K-5 education New Caney, personalized learning, character development",
   openGraph: {
     title: "Private School in New Caney, TX | Bright Minds Future Leaders",
     description:
-      "Award-winning private micro school in New Caney with personalized K-8 education and small class sizes.",
+      "Award-winning private micro school in New Caney with personalized K-5 education and small class sizes.",
     url: "https://www.brightmindsfutureleaders.com/areas/new-caney",
     images: [
       {
@@ -45,7 +45,7 @@ export default function NewCaneyPage() {
               New Caney's Premier Private Micro School
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
-              Right here in New Caney! Personalized K-8 education with small class sizes and award-winning character
+              Right here in New Caney! Personalized K-5 education with small class sizes and award-winning character
               development.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

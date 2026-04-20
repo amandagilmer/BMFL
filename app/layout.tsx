@@ -6,16 +6,34 @@ import Script from "next/script"
 
 const inter = Inter({ subsets: ["latin"] })
 
+const BASE_URL = "https://brightmindsfutureleaders.com"
+
 export const metadata: Metadata = {
+  metadataBase: new URL(BASE_URL),
   title: {
-    default: "Bright Minds Future Leaders | Private Micro School in New Caney, TX",
+    default: "Bright Minds Future Leaders | Private School in New Caney, TX",
     template: "%s | Bright Minds Future Leaders",
   },
   description:
-    "Award-winning private micro school in New Caney, TX. Personalized K-8 education with small class sizes (max 12 students). Enroll today!",
-  keywords:
-    "private school New Caney TX, micro school, small class sizes, K-8 education, personalized learning, character development",
-  authors: [{ name: "Bright Minds Future Leaders" }],
+    "Bright Minds Future Leaders is a private school in New Caney, TX offering personalized K-5 education with small class sizes, ability-based learning, and strong character development. Serving Kingwood, Porter, Splendora, Humble & Conroe.",
+  keywords: [
+    "private school New Caney TX",
+    "private school Kingwood TX",
+    "private school Porter TX",
+    "private school Splendora TX",
+    "small private school New Caney",
+    "private elementary school New Caney",
+    "private school near me New Caney",
+    "alternative school New Caney TX",
+    "private school Humble TX",
+    "private school Conroe TX",
+    "small class size school New Caney",
+    "ability based learning Texas",
+    "character development school",
+    "Angela Gilmer Bright Minds",
+    "Bright Minds Future Leaders",
+  ],
+  authors: [{ name: "Angela Gilmer", url: BASE_URL }],
   creator: "Bright Minds Future Leaders",
   publisher: "Bright Minds Future Leaders",
   formatDetection: {
@@ -23,33 +41,32 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://www.brightmindsfutureleaders.com"),
   alternates: {
-    canonical: "/",
+    canonical: BASE_URL,
   },
   openGraph: {
-    title: "Bright Minds Future Leaders | Private Micro School in New Caney, TX",
+    title: "Bright Minds Future Leaders | Private School in New Caney, TX",
     description:
-      "Award-winning private micro school in New Caney, TX. Personalized K-8 education with small class sizes.",
-    url: "https://www.brightmindsfutureleaders.com",
+      "Private school in New Caney, TX with small classes, ability-based learning & character development. Serving Kingwood, Porter, Splendora, Humble & Conroe.",
+    url: BASE_URL,
     siteName: "Bright Minds Future Leaders",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "/hero-students-bg.png",
+        url: "/logo-bright-minds-color.png",
         width: 1200,
         height: 630,
-        alt: "Bright Minds Future Leaders",
+        alt: "Bright Minds Future Leaders private school in New Caney, TX",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bright Minds Future Leaders | Private Micro School in New Caney, TX",
+    title: "Bright Minds Future Leaders | Private School in New Caney, TX",
     description:
-      "Award-winning private micro school in New Caney, TX. Personalized K-8 education with small class sizes.",
-    images: ["/hero-students-bg.png"],
+      "Private school in New Caney, TX. Small classes, ability-based learning & character development. Serving Kingwood, Porter, Splendora & surrounding areas.",
+    images: ["/logo-bright-minds-color.png"],
   },
   robots: {
     index: true,
@@ -75,7 +92,7 @@ export const metadata: Metadata = {
   other: {
     "facebook-domain-verification": "e10x1q0ko30szez9aqpz844izlymqi",
   },
-    generator: 'v0.app'
+  category: "education",
 }
 
 export default function RootLayout({
@@ -87,8 +104,87 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="facebook-domain-verification" content="e10x1q0ko30szez9aqpz844izlymqi" />
+        {/* Google Tag Manager */}
+        <Script
+          id="gtm-script"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-5VWCL4RN');`,
+          }}
+        />
       </head>
       <body className={inter.className}>
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-5VWCL4RN"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
+
+        {/* JSON-LD Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": ["EducationalOrganization", "LocalBusiness"],
+                  "@id": `${BASE_URL}/#organization`,
+                  name: "Bright Minds Future Leaders",
+                  alternateName: "BMFL",
+                  description:
+                    "Private school in New Caney, TX offering personalized K-5 education with small class sizes, ability-based learning, and strong character development.",
+                  url: BASE_URL,
+                  logo: `${BASE_URL}/logo-bright-minds-color.png`,
+                  telephone: "+18329577530",
+                  founder: {
+                    "@type": "Person",
+                    name: "Angela Gilmer",
+                    jobTitle: "Founder & Lead Educator",
+                  },
+                  address: {
+                    "@type": "PostalAddress",
+                    streetAddress: "22893 Antique Ln",
+                    addressLocality: "New Caney",
+                    addressRegion: "TX",
+                    postalCode: "77357",
+                    addressCountry: "US",
+                  },
+                  openingHoursSpecification: [
+                    {
+                      "@type": "OpeningHoursSpecification",
+                      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                      opens: "08:30",
+                      closes: "15:30",
+                    },
+                  ],
+                  areaServed: [
+                    "New Caney, TX", "Humble, TX", "Kingwood, TX",
+                    "Porter, TX", "Conroe, TX", "Splendora, TX",
+                    "Atascocita, TX", "Spring, TX", "The Woodlands, TX",
+                  ],
+                  hasMap: "https://maps.google.com/?q=22893+Antique+Ln,+New+Caney,+TX+77357",
+                },
+                {
+                  "@type": "WebSite",
+                  "@id": `${BASE_URL}/#website`,
+                  url: BASE_URL,
+                  name: "Bright Minds Future Leaders",
+                  publisher: { "@id": `${BASE_URL}/#organization` },
+                },
+              ],
+            }),
+          }}
+        />
+
         {children}
 
         {/* Facebook Pixel */}

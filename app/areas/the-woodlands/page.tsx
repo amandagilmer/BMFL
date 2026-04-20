@@ -9,9 +9,9 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Private School Near The Woodlands, TX | Bright Minds Future Leaders",
   description:
-    "Premier private micro school serving The Woodlands, TX. Maximum 8 students per class, individualized K-8 education, character-focused curriculum. Alternative to Conroe ISD. Serving Shenandoah, Oak Ridge. Book your tour today!",
+    "Premier private micro school serving The Woodlands, TX. Maximum 8 students per class, individualized K-5 education, character-focused curriculum. Alternative to Conroe ISD. Serving Shenandoah, Oak Ridge. Book your tour today!",
   keywords:
-    "private school The Woodlands TX, The Woodlands micro school, Conroe ISD alternative, small class sizes The Woodlands, personalized education The Woodlands, K-8 private school Texas",
+    "private school The Woodlands TX, The Woodlands micro school, Conroe ISD alternative, small class sizes The Woodlands, personalized education The Woodlands, K-5 private school Texas",
 }
 
 export default function TheWoodlandsPage() {
@@ -372,9 +372,9 @@ export default function TheWoodlandsPage() {
               size="lg"
               className="border-2 border-white text-white hover:bg-white hover:text-green-600 font-bold px-10 py-4 text-xl rounded-lg bg-transparent"
             >
-              <Link href="tel:+12813545437">
+              <Link href="tel:+18329577530">
                 <Phone className="h-6 w-6 mr-2" />
-                Call (281) 354-5437
+                Call (832) 957-7530
               </Link>
             </Button>
           </div>
@@ -410,8 +410,8 @@ export default function TheWoodlandsPage() {
                   <Phone className="h-6 w-6 text-green-600 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
-                    <a href="tel:+12813545437" className="text-green-600 hover:text-green-700 transition-colors">
-                      (281) 354-5437
+                    <a href="tel:+18329577530" className="text-green-600 hover:text-green-700 transition-colors">
+                      (832) 957-7530
                     </a>
                   </div>
                 </div>

@@ -25,7 +25,7 @@ export default function SplendoraPage() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "Bright Minds Future Leaders",
-    description: "Private micro school serving Splendora, TX families with personalized K-8 education",
+    description: "Private micro school serving Splendora, TX families with personalized K-5 education",
     url: "https://brightmindsfutureleaders.com/areas/splendora",
     telephone: "+1-832-957-7530",
     address: {
@@ -71,7 +71,7 @@ export default function SplendoraPage() {
                 Families
               </h1>
               <p className="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-                Quality Private Education Just Minutes from Splendora – Personalized K-8 Learning
+                Quality Private Education Just Minutes from Splendora – Personalized K-5 Learning
               </p>
             </div>
 

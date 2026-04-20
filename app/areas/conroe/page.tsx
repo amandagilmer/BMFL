@@ -22,9 +22,9 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Private School Near Conroe, TX | Bright Minds Future Leaders",
   description:
-    "Top-rated private micro school serving Conroe, TX. Max 8 students, personalized K-8 education, certified teachers. Alternative to Conroe ISD. Serving Montgomery, Willis. Schedule your tour today!",
+    "Top-rated private micro school serving Conroe, TX. Max 8 students, personalized K-5 education, certified teachers. Alternative to Conroe ISD. Serving Montgomery, Willis. Schedule your tour today!",
   keywords:
-    "private school Conroe TX, Conroe ISD alternative, micro school Conroe, small class sizes Conroe, personalized education Conroe Texas, K-8 private school",
+    "private school Conroe TX, Conroe ISD alternative, micro school Conroe, small class sizes Conroe, personalized education Conroe Texas, K-5 private school",
 }
 
 export default function ConroePage() {

@@ -11,14 +11,14 @@ import { MapPin, Users, BookOpen, GraduationCap, Heart, Award } from "lucide-rea
 export const metadata: Metadata = {
   title: "Private School Near Porter TX | Bright Minds Future Leaders",
   description:
-    "Top-rated private micro school just 10 minutes from Porter TX. Personalized K-8 education with small classes. Serving Porter families. Schedule a tour today.",
+    "Top-rated private micro school just 10 minutes from Porter TX. Personalized K-5 education with small classes. Serving Porter families. Schedule a tour today.",
   alternates: {
     canonical: "https://brightmindsfutureleaders.com/areas/porter",
   },
   openGraph: {
     title: "Private School Near Porter TX | Bright Minds Future Leaders",
     description:
-      "Top-rated private micro school just 10 minutes from Porter TX. Personalized K-8 education with small classes. Serving Porter families. Schedule a tour today.",
+      "Top-rated private micro school just 10 minutes from Porter TX. Personalized K-5 education with small classes. Serving Porter families. Schedule a tour today.",
     url: "https://brightmindsfutureleaders.com/areas/porter",
     siteName: "Bright Minds Future Leaders",
     images: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Private School Near Porter TX | Bright Minds Future Leaders",
     description:
-      "Top-rated private micro school just 10 minutes from Porter TX. Personalized K-8 education with small classes. Serving Porter families. Schedule a tour today.",
+      "Top-rated private micro school just 10 minutes from Porter TX. Personalized K-5 education with small classes. Serving Porter families. Schedule a tour today.",
     images: ["https://brightmindsfutureleaders.com/hero-students-bg.png"],
   },
 }
@@ -87,7 +87,7 @@ export default function PorterAreaPage() {
             },
             priceRange: "$$",
             description:
-              "Private micro school serving Porter TX families with personalized K-8 education, small class sizes of 12 students or less, and individualized learning plans.",
+              "Private micro school serving Porter TX families with personalized K-5 education, small class sizes of 12 students or less, and individualized learning plans.",
           }),
         }}
       />
@@ -108,7 +108,7 @@ export default function PorterAreaPage() {
                 Private School Serving Porter, TX Families
               </h1>
               <p className="text-xl md:text-2xl mb-8 text-white/95">
-                Just 10 Minutes from Porter • Personalized K-8 Education at Bright Minds Future Leaders
+                Just 10 Minutes from Porter • Personalized K-5 Education at Bright Minds Future Leaders
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild className="bg-white text-purple-700 hover:bg-gray-100 text-lg px-8 py-6">
@@ -368,10 +368,10 @@ export default function PorterAreaPage() {
                     What grades do you serve?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600 pt-4">
-                    K-8, offering continuous elementary and middle school education. This allows children to develop
-                    long-term relationships with teachers and peers while progressing through a cohesive curriculum.
-                    Unlike traditional schools where children must transition between elementary and middle school, our
-                    students enjoy continuity throughout their educational journey with us. Learn more about{" "}
+                    We currently serve Kindergarten through 5th grade (K-5). Our ability-based model means students
+                    work at their actual level in reading and math — not just their grade level. This allows children
+                    to develop long-term relationships with teachers and peers while progressing at their own pace.
+                    Learn more about{" "}
                     <Link
                       href="/who-we-serve"
                       className="text-purple-600 hover:text-purple-700 underline font-semibold no-underline hover:underline"

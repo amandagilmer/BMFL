@@ -30,7 +30,7 @@ export default function ShepherdPage() {
     name: "Bright Minds Future Leaders - Serving Shepherd, TX",
     image: "https://bmflschool.com/logo-horizontal.png",
     description:
-      "Private micro school serving Shepherd, TX families with personalized K-8 education, maximum 12 students per class.",
+      "Private micro school serving Shepherd, TX families with personalized K-5 education, maximum 12 students per class.",
     address: {
       "@type": "PostalAddress",
       streetAddress: "21334 FM 2100 Rd",
@@ -430,10 +430,10 @@ export default function ShepherdPage() {
                 </p>
                 <div className="flex flex-wrap justify-center gap-3">
                   <span className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full font-semibold">Shepherd</span>
-                  <span className="bg-pink-100 text-pink-800 px-4 py-2 rounded-full font-semibold">Cleveland</span>
+                  <span className="bg-pink-100 text-pink-500 px-4 py-2 rounded-full font-semibold">Cleveland</span>
                   <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-semibold">Coldspring</span>
                   <span className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full font-semibold">Goodrich</span>
-                  <span className="bg-pink-100 text-pink-800 px-4 py-2 rounded-full font-semibold">Oakhurst</span>
+                  <span className="bg-pink-100 text-pink-500 px-4 py-2 rounded-full font-semibold">Oakhurst</span>
                   <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-semibold">
                     Rural San Jacinto County
                   </span>
